@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Physiotherapy Services</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/600') center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonials {
+            background: #f9f9f9;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #3498db;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header id="home">
+    <h1>Professional Physiotherapy Services</h1>
+    <p>Helping you move better, feel better, live better</p>
+</header>
+
+<section id="about" class="container">
+    <div data-aos="fade-up">
+        <img src="profile-img-200-200.png" alt="Professional headshot" class="profile-img">
+        <h2>About Me</h2>
+        <p>With over 2 years of experience in physiotherapy, I specialize in helping patients recover from injuries, manage chronic conditions, and improve their overall quality of life. My approach combines evidence-based treatments with personalized care to ensure the best possible outcomes for each patient.</p>
+    </div>
+</section>
+
+
+<section id="services">
+    <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <img src="/api/placeholder/300/200" alt="Sports Rehabilitation">
+                <h3>Sports Rehabilitation</h3>
+                <p>Specialized treatment for sports-related injuries and performance enhancement.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="/api/placeholder/300/200" alt="Manual Therapy">
+                <h3>Manual Therapy</h3>
+                <p>Hands-on techniques to reduce pain and improve mobility.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="/api/placeholder/300/200" alt="Chronic Pain Management">
+                <h3>Chronic Pain Management</h3>
+                <p>Comprehensive approach to managing and reducing chronic pain.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2>Patient Testimonials</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card" data-aos="fade-up">
+                <p>"The treatment I received was exceptional. I'm now back to my regular activities pain-free!"</p>
+                <strong>- Kushal M.</strong>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <p>"Professional, knowledgeable, and caring. Highly recommend!"</p>
+                <strong>- Santosh D.</strong>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <p>"The personalized exercise program has made a huge difference in my recovery."</p>
+                <strong>- Rima R.</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form" data-aos="fade-up">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Phone Number">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2024 Professional Physiotherapy Services. All rights reserved.</p>
+        <p>Location: Kodihalli, Bangaluru</p>
+        <p>Phone: [Your Phone]</p>
+        <p>Email: ria.garai99@gmail.com</p>
+    </div>
+</footer>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+</body>
+</html>
